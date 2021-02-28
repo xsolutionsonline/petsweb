@@ -1,0 +1,30 @@
+@use "@material/layout-grid/mdc-layout-grid";
+
+  mat-grid-list{
+    margin: 0% 5%;
+    
+  } 
+ .tile-customer{
+     display: block;
+ }
+
+  .button-home {
+        height: 80%;
+        width: 100%;
+  }
+
+  .example-card {
+    width: 100%;
+    background-color:#673ab7;
+    color: white;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .card-customer{
+      text-align: center;
+  }
+  

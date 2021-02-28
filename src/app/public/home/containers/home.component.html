@@ -1,1 +1,250 @@
-<h3>este es el home </h3>
+<mat-grid-list #grid [cols]="cols" rowHeight="5:1" gutterSize="2px" >
+    <mat-grid-tile> 
+        <button mat-raised-button color="primary" class="button-home"><h2>Citas Virtuales Pendientes 3</h2></button>
+    </mat-grid-tile>
+    <mat-grid-tile color="primary"> 
+        <button mat-raised-button color="primary" class="button-home"><h2>Activar Citas Virtuales</h2></button>
+    </mat-grid-tile>
+    <mat-grid-tile> 
+        <button mat-raised-button color="warn" class="button-home"><h2>Desactivar Citas Virtuales</h2></button>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <h1>Jerry Leon Restrepo  </h1>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" color="primary">power_settings_new</mat-icon>
+    </mat-grid-tile>   
+  </mat-grid-list>
+
+  <!-- -->
+  <mat-grid-list #gridInformes cols=1 rowHeight="40:1" gutterSize="2px" >
+    <mat-grid-tile > 
+                <h1 color="primary">Informes</h1>
+    </mat-grid-tile>
+     
+  </mat-grid-list>
+
+  <mat-grid-list #gridReportes [cols]="cols" rowHeight="120px" gutterSize="2px" >
+    <mat-grid-tile class="tile-customer"> 
+        <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title class="card-customer">CITAS DE HOY</mat-card-title>
+              
+            </mat-card-header>
+
+            <mat-card-content class="card-customer">
+                <h1>15</h1>
+              <p>
+                  <strong>CITAS ATENDIDAS: 2</strong>
+              </p>
+            </mat-card-content>
+           
+          </mat-card>
+    </mat-grid-tile>
+    
+    <mat-grid-tile > 
+        <mat-card class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title class="card-customer"> CITAS DE LA SEMANA </mat-card-title>
+            
+          </mat-card-header>
+    
+          <mat-card-content class="card-customer">
+              <h1>45</h1>
+            <p>
+                <strong>CITAS ATENDIDAS: 15</strong>
+            </p>
+          </mat-card-content>
+         
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile> 
+        <mat-card class="example-card">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title class="card-customer"> CITAS MES ACTUAL</mat-card-title>
+                
+              </mat-card-header>
+        
+              <mat-card-content class="card-customer">
+                  <h1>225</h1>
+                <p>
+                    <strong>CITAS ATENDIDAS: 45</strong>
+                </p>
+              </mat-card-content>
+             
+            </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title class="card-customer"> CITAS ATENDIDAS EN EL AÑO </mat-card-title>
+                
+              </mat-card-header>
+        
+              <mat-card-content class="card-customer">
+                  <h1>500</h1>
+                              </mat-card-content>
+             
+            </mat-card>
+    </mat-grid-tile>   
+  </mat-grid-list>
+<br><br>
+  <mat-grid-list #gridReportesDinero [cols]="cols" rowHeight="120px" gutterSize="2px" >
+    <mat-grid-tile class="tile-customer"> 
+        <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title class="card-customer">ingresos generados en el mes</mat-card-title>
+              
+            </mat-card-header>
+
+            <mat-card-content class="card-customer">
+                <h1>$3.000.000</h1>
+              <p>
+                  <strong>Mes Pasado: $4.500.000</strong>
+              </p>
+            </mat-card-content>
+           
+          </mat-card>
+    </mat-grid-tile>
+    
+    <mat-grid-tile > 
+        <mat-card class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title class="card-customer"> Ingresos generados en el dia </mat-card-title>
+            
+          </mat-card-header>
+    
+          <mat-card-content class="card-customer">
+              <h1>$180.000</h1>
+            <p>
+                <strong>Dia Anterior: $120.000</strong>
+            </p>
+          </mat-card-content>
+         
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile> 
+        <mat-card class="example-card">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title class="card-customer"> citas que se han pagado</mat-card-title>
+                
+              </mat-card-header>
+        
+              <mat-card-content class="card-customer">
+                  <h1>$4.000.000</h1>
+                  <p>
+                    <strong>Felicidades lleva  88% recaudado</strong>
+                </p>
+              </mat-card-content>
+             
+            </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title class="card-customer">citas pendientes por pagar </mat-card-title>
+                
+              </mat-card-header>
+        
+              <mat-card-content class="card-customer">
+                  <h1>500</h1>
+                  <p>
+                    <strong>solo falta el 20% por recaudar</strong>
+                </p>
+                              </mat-card-content>
+             
+            </mat-card>
+    </mat-grid-tile>   
+  </mat-grid-list>
+
+<br><br>
+  <mat-grid-list #gridReportesCitas [cols]="cols" rowHeight="500px" gutterSize="2px" >
+    <mat-grid-tile class="tile-customer"> 
+        <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Mike</mat-card-title>
+              <mat-card-subtitle>Border Collie</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+              PRESENTA DIARREA , FIEBRE  , LLORADO CONSTANTE 
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>ATENDER CITA</button>
+              <button mat-button>CANCELAR CITA</button>
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+    
+    <mat-grid-tile > 
+        <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>JUANA</mat-card-title>
+              <mat-card-subtitle>Border Collie</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+              PRESENTA DIARREA , INAPETENTE , NO QUIERE SALIR 
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>ATENDER CITA</button>
+              <button mat-button>CANCELAR CITA</button>
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile> 
+        <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>BRUNO</mat-card-title>
+              <mat-card-subtitle>Labrador</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+              CASTRACION YA QUE YA TIENE LA EDAD SUFICIENTE 
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>ATENDER CITA</button>
+              <button mat-button>CANCELAR CITA</button>
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>MILO</mat-card-title>
+              <mat-card-subtitle>Border Collie</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+              PRESENTA DIARREA , FIEBRE  , LLORADO CONSTANTE
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>ATENDER CITA</button>
+              <button mat-button>CANCELAR CITA</button>
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>   
+  </mat-grid-list>
+
+
+
+
+  
